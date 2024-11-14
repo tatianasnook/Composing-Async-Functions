@@ -3,6 +3,15 @@
 // Run in the terminal from the project directory with
 //   node src/index.js
 
+// Or as
+//   npm start
+
+// Files other than src/index.js must be run using
+//   node path/to/file.js
+
+// Where `path/to/file.js` represents the path to the file to be run relative to
+// the current working directory.
+
 // The `Code Runner` VS Code Extension can be installed to add a Play button for
 // JavaScript code.
 

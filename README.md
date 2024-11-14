@@ -40,6 +40,12 @@ A project providing a basic JavaScript REPL (Read-Eval-Print Loop) for local dev
     $ node src/index.js
     ```
 
+    Or
+
+    ```bash
+    $ npm start
+    ```
+
   - Or from VS Code, install the **Code Runner** extension and run the file by clicking the play button in the top right corner of the editor.
 
 5. Repeat steps 3-4 as needed.
@@ -68,8 +74,16 @@ Tests will be covered in more detail in Unit 3, Tests
 
 ## Additional files
 
-Additional files can be added to the `src` directory and then run from the poroject directory as
+Additional files can be added to the `src` directory and then run from the project directory as
 
 ```bash
 $ node src/<filename>.js
 ```
+
+Generally, we can run a file by using the command
+
+```bash
+$ node path/to/file.js
+```
+
+Where `path/to/file.js` is the path to the file we want to run relative to the current directory.
