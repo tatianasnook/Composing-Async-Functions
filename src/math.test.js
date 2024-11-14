@@ -1,7 +1,7 @@
-const { sum } = require("./math");
+const { sum } = require('./math');
 
-describe("math", () => {
-  test("performs a sample test summing numbers", () => {
+describe('math', () => {
+  test('performs a sample test summing numbers', () => {
     // Arrange
     const a = 1;
     const b = 2;
