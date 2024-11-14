@@ -3,7 +3,6 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
         "standard"
     ],
     "parserOptions": {
@@ -14,8 +13,7 @@
         "sourceType": "module"
     },
     "plugins": [
-      "jest", 
-      "react"
+      "jest"
     ],
     "rules": {
       "max-len": [1, 120, 2, { "ignoreComments": true }],
@@ -23,10 +21,5 @@
       "quotes": ["error", "single"],
       "camelcase": ["error", {"properties": "always"}],
       "semi": ["warn", "always"]
-    },
-    "settings": {
-      "react": {
-        "version": "detect"
-      }
     }
 }
