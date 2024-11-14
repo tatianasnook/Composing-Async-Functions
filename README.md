@@ -44,6 +44,16 @@ A project providing a basic JavaScript REPL (Read-Eval-Print Loop) for local dev
 
 5. Repeat steps 3-4 as needed.
 
+## Syntax Warnings
+
+The project is configured to use ESLint to provide syntax warnings. ESLint can be run from the project directory using the following command:
+
+```bash
+$ npm run lint
+```
+
+ESLint warnings can be shown in VS Code by installing the **ESLint** extension.
+
 ## Tests
 
 A simple example test is provided in the `src/math.test.js` file, which tests a function defined in `src/math.js`. To run the test, use the following command:
