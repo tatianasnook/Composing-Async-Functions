@@ -21,6 +21,13 @@
       "no-console": "off",
       "quotes": ["error", "single"],
       "camelcase": ["error", {"properties": "always"}],
-      "semi": ["warn", "always"]
+      "semi": ["warn", "always"],
+      "comma-dangle": ["warn", "only-multiline"],
+      "dot-notation": "warn",
+      "space-before-function-paren": "off",
+      "indent": ["warn", 2],
+      "padded-blocks": "warn",
+      "no-trailing-spaces": "warn",
+      "array-bracket-spacing": "warn"
     }
 }
