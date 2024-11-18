@@ -28,6 +28,7 @@
       "indent": ["warn", 2],
       "padded-blocks": "warn",
       "no-trailing-spaces": "warn",
-      "array-bracket-spacing": "warn"
+      "array-bracket-spacing": "warn",
+      "no-multi-spaces": ["error", { "ignoreEOLComments": true } ]
     }
 }
