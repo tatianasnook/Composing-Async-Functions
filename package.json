@@ -1,5 +1,5 @@
 {
-  "name": "javascript-repl",
+  "name": "javascript-repl-eslint",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,15 +12,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-jest": "^25.2.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.1",
-    "jest": "^27.3.1"
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "eslint-plugin-promise": "^7.1.0",
+    "globals": "^15.12.0",
+    "jest": "^29.7.0"
   },
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.7.7",
+    "eslint-plugin-jest": "^28.9.0"
   }
 }
