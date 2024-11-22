@@ -7,7 +7,7 @@ import pluginPromise from "eslint-plugin-promise";
 export default [
   {ignores: ["*.config.*"]},
   {files: ["**/*.js"], languageOptions: {sourceType: "commonjs"}},
-  {languageOptions: { globals: globals.browser }},
+  {languageOptions: { globals: globals.node }},
   pluginJs.configs.recommended,
   pluginPromise.configs['flat/recommended'],
   {
