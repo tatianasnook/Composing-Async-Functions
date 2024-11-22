@@ -24,5 +24,9 @@
 // The `Jest` VS Code Extension can be installed so that the tests are detected
 // and appear under the VS Code Testing panel.
 
+// To silence the `.env not found. Continuing without it.` message when using
+// `npm start`, create a `.env` file in the root of the project. Refer to
+// `.env.sample` for details.
+
 // Replace with the code you'd like to run
 console.log('Hello, World!');
