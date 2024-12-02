@@ -1,32 +1,40 @@
-// Use this file as a general scratch pad for running code.
+const axios = require('axios');
 
-// Run in the terminal from the project directory with
-//   node src/index.js
+// A helper method to pick one value from a list
+const getRandomValue = (values) => {
+  const index = Math.floor(Math.random() * values.length);
+  return values[index];
+};
 
-// Or as
-//   npm start
+// Helper method to retrieve a list of breeds
+// https://dog.ceo/dog-api/documentation/
+// returns a Promise to an array of breed names
 
-// Files other than src/index.js must be run using
-//   node path/to/file.js
+const getBreeds = () => {
+  // implement me!
+};
 
-// Where `path/to/file.js` represents the path to the file to be run relative to
-// the current working directory.
+// Helper method to retrieve a random image for a
+// specified breed
+// https://dog.ceo/dog-api/documentation/breed
+// RANDOM IMAGE FROM A BREED COLLECTION
+// returns a Promise to a url (string)
 
-// The `Code Runner` VS Code Extension can be installed to add a Play button for
-// JavaScript code.
+const getRandomImageForBreed = (breed) => {
+  // implement me!
+};
 
-// Refer to math.js and math.test.js for an example of a small test.
-// More details will be covered in Unit 3, Tests.
+// use our other helpers to make a function that returns
+// a random image from a random breed
+// returns a Promise to a url (string)
 
-// Run from the terminal with
-//   npm test
+const getRandomDogImage = () => {
+  // implement me!
+};
 
-// The `Jest` VS Code Extension can be installed so that the tests are detected
-// and appear under the VS Code Testing panel.
-
-// To silence the `.env not found. Continuing without it.` message when using
-// `npm start`, create a `.env` file in the root of the project. Refer to
-// `.env.sample` for details.
-
-// Replace with the code you'd like to run
-console.log('Hello, World!');
+// This is the call we would like to make work
+// This function should return a Promise to a url (string)
+getRandomDogImage()
+  .then(url => {
+    console.log(url);
+  });
