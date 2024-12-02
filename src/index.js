@@ -11,8 +11,19 @@ const getRandomValue = (values) => {
 // returns a Promise to an array of breed names
 
 const getBreeds = () => {
-  // implement me!
+  return axios
+    .get('https://dog.ceo/api/breeds/list/all')
+    .then((response) => {
+      return Object.keys(response.data.message);
+    })
+    .catch((error) => {
+      console.log(error, 'error!');
+    });
 };
+getBreeds()
+  .then(breeds => {
+    console.log(breeds);
+  });
 
 // Helper method to retrieve a random image for a
 // specified breed
@@ -21,8 +32,19 @@ const getBreeds = () => {
 // returns a Promise to a url (string)
 
 const getRandomImageForBreed = (breed) => {
-  // implement me!
+  return axios
+    .get(`https://dog.ceo/api/breed/${breed}/images/random`)
+    .then((response) => {
+      return response.data.message;
+    })
+    .catch((error) => {
+      console.log(error, 'error!');
+    });
 };
+getRandomImageForBreed('hound')
+  .then(image => {
+    console.log(image);
+  });
 
 // use our other helpers to make a function that returns
 // a random image from a random breed
@@ -34,7 +56,7 @@ const getRandomDogImage = () => {
 
 // This is the call we would like to make work
 // This function should return a Promise to a url (string)
-getRandomDogImage()
-  .then(url => {
-    console.log(url);
-  });
+// getRandomDogImage()
+//   .then(url => {
+//     console.log(url);
+//   });
